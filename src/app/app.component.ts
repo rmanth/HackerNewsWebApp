@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { HackerNewsService } from './hackernews.service';
+import { BookDetails, HackerNewsService } from './hackernews.service';
 import { CommonModule } from '@angular/common';
-import { BookDetails } from './bookDetails.model';
+
 import { FormsModule } from '@angular/forms';
 
 @Component({
