@@ -8,7 +8,8 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "serve:ssr:HackerNewsApp": "node dist/hacker-news-app/server/server.mjs",
-    "build:prod": "ng build --configuration production"
+    "build:prod": "ng build --configuration production",
+    "serve:prod": "ng serve --configuration production"
   },
   "private": true,
   "dependencies": {
