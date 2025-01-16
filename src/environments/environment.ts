@@ -4,7 +4,7 @@
 
 export const environment = {
     production: false,
-    apiUrl: 'http://localhost:33445/api/HackerNews'
+    apiUrl: 'http://localhost:33445'
   };
   
   /*
