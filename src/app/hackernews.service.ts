@@ -17,7 +17,7 @@ export class BookDetails {
 })
 export class HackerNewsService {
 
-  private apiUrl = 'https://localhost:44384/api/HackerNews'; // Replace with your WebAPI URL
+  private apiUrl = 'http://localhost:33445/api/HackerNews'; // Replace with your WebAPI URL
 
   constructor(private _HttpClient: HttpClient) { }
 
