@@ -25,8 +25,13 @@ export class AppComponent implements OnInit {
   constructor(private newsService: HackerNewsService) {}
 
   ngOnInit() : void {
+      
+  }
+
+  loadData()
+  {
     this.loadNewStories();
-    this.loadNewStoriesWithPagination();    
+    this.loadNewStoriesWithPagination();  
   }
 
   loadNewStories() {
