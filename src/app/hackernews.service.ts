@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
+import { environment } from '../environments/environment';
 
 
 export class BookDetails {
@@ -17,7 +18,7 @@ export class BookDetails {
 })
 export class HackerNewsService {
 
-  private apiUrl = 'http://localhost:33445/api/HackerNews'; // Replace with your WebAPI URL
+  private apiUrl = environment.apiUrl; //'http://localhost:33445/api/HackerNews'; // Replace with your WebAPI URL
 
   constructor(private _HttpClient: HttpClient) { }
 
