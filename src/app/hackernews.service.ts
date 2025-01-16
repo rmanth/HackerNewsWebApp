@@ -18,7 +18,7 @@ export class BookDetails {
 })
 export class HackerNewsService {
 
-  private apiUrl = environment.apiUrl; //'http://localhost:33445/api/HackerNews'; // Replace with your WebAPI URL
+  private apiUrl = environment.apiUrl;
 
   constructor(private _HttpClient: HttpClient) { }
 
