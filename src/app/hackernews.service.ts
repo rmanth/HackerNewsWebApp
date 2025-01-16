@@ -23,11 +23,11 @@ export class HackerNewsService {
   constructor(private _HttpClient: HttpClient) { }
 
   getNewestStories(): Observable<BookDetails[]> {
-    return this._HttpClient.get<BookDetails[]>(`${this.apiUrl}/newest`);
+    return this._HttpClient.get<BookDetails[]>(`${this.apiUrl}/api/HackerNews/newest`);
   }
 
   getNewestStoriesWithPagination(page: number, pageSize: number): Observable<BookDetails[]> {
-    return this._HttpClient.get<BookDetails[]>(`${this.apiUrl}/pagination?page=${page}&pageSize=${pageSize}`);
+    return this._HttpClient.get<BookDetails[]>(`${this.apiUrl}/api/HackerNews/pagination?page=${page}&pageSize=${pageSize}`);
   }
 
   // Search for stories
